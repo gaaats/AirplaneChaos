@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation_in_app"
+    app:startDestination="@id/velcomeFragment">
+
+    <fragment
+        android:id="@+id/velcomeFragment"
+        android:name="com.gemrartairplane.airplanechaos.VelcomeFragment"
+        android:label="fragment_velcome"
+        tools:layout="@layout/fragment_velcome" >
+        <action
+            android:id="@+id/action_velcomeFragment_to_gameTankFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/gameTankFragment" />
+        <action
+            android:id="@+id/action_velcomeFragment_to_gameAirplaneFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/gameAirplaneFragment" />
+        <action
+            android:id="@+id/action_velcomeFragment_to_raitingFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/raitingFragment" />
+        <action
+            android:id="@+id/action_velcomeFragment_to_coomingSoonFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/coomingSoonFragment" />
+        <action
+            android:id="@+id/action_velcomeFragment_to_allSettingsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/allSettingsFragment" />
+        <action
+            android:id="@+id/action_velcomeFragment_to_hovToPlayFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/hovToPlayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameTankFragment"
+        android:name="com.gemrartairplane.airplanechaos.GameTankFragment"
+        android:label="fragment_game_tank"
+        tools:layout="@layout/fragment_game_tank" >
+        <action
+            android:id="@+id/action_gameTankFragment_to_faaaaailedFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/faaaaailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameAirplaneFragment"
+        android:name="com.gemrartairplane.airplanechaos.GameAirplaneFragment"
+        android:label="fragment_game_airplane"
+        tools:layout="@layout/fragment_game_airplane" >
+        <action
+            android:id="@+id/action_gameAirplaneFragment_to_faaaaailedFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/faaaaailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faaaaailedFragment"
+        android:name="com.gemrartairplane.airplanechaos.FaaaaailedFragment"
+        android:label="fragment_faaaaailed"
+        tools:layout="@layout/fragment_faaaaailed" >
+        <action
+            android:id="@+id/action_faaaaailedFragment_to_velcomeFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/velcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/raitingFragment"
+        android:name="com.gemrartairplane.airplanechaos.RaitingFragment"
+        android:label="fragment_raiting"
+        tools:layout="@layout/fragment_raiting" />
+    <fragment
+        android:id="@+id/coomingSoonFragment"
+        android:name="com.gemrartairplane.airplanechaos.CoomingSoonFragment"
+        android:label="fragment_cooming_soon"
+        tools:layout="@layout/fragment_cooming_soon" />
+    <fragment
+        android:id="@+id/allSettingsFragment"
+        android:name="com.gemrartairplane.airplanechaos.AllSettingsFragment"
+        android:label="fragment_all_settings"
+        tools:layout="@layout/fragment_all_settings" >
+        <action
+            android:id="@+id/action_allSettingsFragment_to_hovToPlayFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/hovToPlayFragment" />
+        <action
+            android:id="@+id/action_allSettingsFragment_to_photoFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/photoFragment" />
+        <action
+            android:id="@+id/action_allSettingsFragment_to_vibroVolumeSettingsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/vibroVolumeSettingsFragment" />
+        <action
+            android:id="@+id/action_allSettingsFragment_to_aboutAuthorFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/aboutAuthorFragment" />
+        <action
+            android:id="@+id/action_allSettingsFragment_to_aboutAppFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/aboutAppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vibroVolumeSettingsFragment"
+        android:name="com.gemrartairplane.airplanechaos.VibroVolumeSettingsFragment"
+        android:label="fragment_vibro_volume_settings"
+        tools:layout="@layout/fragment_vibro_volume_settings" />
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.gemrartairplane.airplanechaos.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo" />
+    <fragment
+        android:id="@+id/hovToPlayFragment"
+        android:name="com.gemrartairplane.airplanechaos.HovToPlayFragment"
+        android:label="fragment_hov_to_play"
+        tools:layout="@layout/fragment_hov_to_play" />
+    <fragment
+        android:id="@+id/aboutAuthorFragment"
+        android:name="com.gemrartairplane.airplanechaos.AboutAuthorFragment"
+        android:label="fragment_about_author"
+        tools:layout="@layout/fragment_about_author" />
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.gemrartairplane.airplanechaos.AboutAppFragment"
+        android:label="fragment_about_app"
+        tools:layout="@layout/fragment_about_app" />
+</navigation>
